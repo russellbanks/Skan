@@ -1,0 +1,5 @@
+[versions]
+clikt = "3.4.1"
+
+[libraries]
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
