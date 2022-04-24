@@ -23,7 +23,7 @@ class Skan : CliktCommand() {
         listOfOpenPorts.run {
             val last = last()
             remove(last())
-            println(joinToString(prefix = "Ports ", postfix = " and $last are open on $hostName"))
+            echo(joinToString(prefix = "Ports ", postfix = " and $last are open on $hostName"))
         }
     }
 }
