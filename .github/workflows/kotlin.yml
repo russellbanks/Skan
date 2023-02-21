@@ -3,20 +3,15 @@ name: Kotlin CI
 on: [push, pull_request]
 
 jobs:
-  build:
-    strategy:
-      fail-fast: false
-      matrix:
-        jdk-version: [18]
-        
+  build:    
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK ${{ matrix.jdk-version }}
+    - name: Set up JDK
       uses: actions/setup-java@v3
       with:
         distribution: temurin
-        java-version: ${{ matrix.jdk-version }}
+        java-version: 17
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
