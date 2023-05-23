@@ -1,5 +1,9 @@
 [versions]
 clikt = "3.5.2"
+kotlin = "1.8.21"
 
 [libraries]
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
