@@ -6,7 +6,7 @@ plugins {
     application
 }
 
-group = "com.russell"
+group = "com.russellbanks"
 version = "1.0-SNAPSHOT"
 
 repositories {
