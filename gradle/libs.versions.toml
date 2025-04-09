@@ -1,5 +1,5 @@
 [versions]
-clikt = "4.4.0"
+clikt = "5.0.3"
 coroutines = "1.8.0"
 kotlin = "1.9.23"
 ktor = "2.3.9"
